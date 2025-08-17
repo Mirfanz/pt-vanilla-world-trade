@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "PT. VANILLA WORLD TRADE",
+  name: "PT. Vanilla World Trade",
   description:
-    "PT. VANILLA WORLD TRADE is a leading company in the trade industry, specializing in high-quality products and exceptional customer service.",
+    "PT. Vanilla World Trade is a leading company in the trade industry, specializing in high-quality products and exceptional customer service.",
   navItems: [
     {
       label: "Home",

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@heroui/button";
 import { Kbd } from "@heroui/kbd";
 import { Input } from "@heroui/input";
@@ -7,8 +9,10 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { TwitterIcon, GithubIcon, DiscordIcon, HeartFilledIcon, SearchIcon, Logo } from "@/components/icons";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
+  const path = usePathname();
   const searchInput = (
     <Input
       aria-label="Search"
@@ -29,7 +33,7 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className="bg-secondary text-white">
+    <nav className={clsx("bg-secondary text-white z-50", path == "/" ? "absolute left-0 right-0 top-0 bg-transparent" : "")}>
       <div className="container">
         <div className="flex items-center py-4 gap-6">
           <div className="flex items-center gap-4">
