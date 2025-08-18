@@ -38,7 +38,9 @@ export const Navbar = () => {
     <nav
       className={clsx(
         "bg-secondary text-white z-50",
-        path == "/" ? "absolute left-0 right-0 top-0 bg-transparent" : "",
+        path == "/"
+          ? "absolute left-0 right-0 top-0 bg-transparent"
+          : "sticky top-0",
       )}
     >
       <div className="container">
@@ -59,7 +61,7 @@ export const Navbar = () => {
                 <li
                   key={item.href}
                   className="font-semibold duration-250 hover:brightness-90 hover:scale-105 data-[active=true]:text-primary"
-                  data-active={item.href == "/"}
+                  data-active={path.startsWith(item.href)}
                 >
                   <Link href={item.href}>{item.label}</Link>
                 </li>
