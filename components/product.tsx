@@ -11,7 +11,7 @@ const Product = (props: Props) => {
       <h2 className="text-5xl font-bold text-center mt-12 mb-14">
         OUR <span className="text-primary">PRODUCT</span>
       </h2>
-      <div className="grid gap-8 grid-cols-3">
+      <div className="grid lg:gap-8 gap-12 grid-cols-1 lg:grid-cols-3">
         {[1, 2, 3, 4, 5, 6].map((item) => (
           <div key={item} className="flex flex-col">
             <Skeleton className="h-48 mb-4" />

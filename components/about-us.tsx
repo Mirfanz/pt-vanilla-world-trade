@@ -30,13 +30,13 @@ const AboutUs = (props: Props) => {
       </section>
       <section className="mb-6">
         <h3 className="font-bold text-xl mb-2">Our Products</h3>
-        <ol className="list-inside list-decimal px-4">
+        <ol className="list-outside ms-2 lg:ms-3 list-decimal px-4">
           <li>Vanilla beans (whole pods)</li>
         </ol>
       </section>
       <section className="mb-6">
         <h3 className="font-bold text-xl mb-2">Our Values</h3>
-        <ol className="list-inside list-decimal px-4">
+        <ol className="list-outside ms-2 lg:ms-3 list-decimal px-4">
           <li>
             Premium Quality – We ensure that every product goes through a strict
             selection and quality testing process.
@@ -65,7 +65,7 @@ const AboutUs = (props: Props) => {
       </section>
       <section className="">
         <h3 className="font-bold text-xl mb-2">Mission</h3>
-        <ol className="list-inside list-disc px-4">
+        <ol className="list-outside ms-2 lg:ms-3 list-disc px-4">
           <li>
             To connect Indonesia’s finest vanilla and spices with buyers
             worldwide through professional and reliable export services.
