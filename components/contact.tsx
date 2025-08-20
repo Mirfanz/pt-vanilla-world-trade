@@ -2,36 +2,24 @@
 
 import Link from "next/link";
 import React from "react";
-import {
-  FaEnvelope,
-  FaInstagram,
-  FaMapLocationDot,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import { FaEnvelope, FaInstagram, FaMapLocationDot, FaWhatsapp } from "react-icons/fa6";
 
 import { siteConfig } from "@/config/site";
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  const nama = "Contact Us";
-
-  console.log("nama", nama);
-
   return (
     <main className="container">
       <h2 className="text-5xl font-bold text-center mt-12 mb-14">
         CONTACT <span className="text-primary">US</span>
       </h2>
-      <h2 className="text-2xl font-bold mb-6">
-        PT. Nusantara Commudities International
-      </h2>
+      <h2 className="text-2xl font-bold mb-6">PT. Nusantara Commudities International</h2>
       <div className="flex justify-between items-center gap-6 mb-10">
         <div className="flex gap-4 items-center hover:text-primary duration-150">
           <FaMapLocationDot size={20} />
           <p className="max-w-sm">
-            Perum Pesona Alam Pringsari Blok G-04, Kelurahan Pringsari,
-            Pringapus, Semarang, Central Java
+            Perum Pesona Alam Pringsari Blok G-04, Kelurahan Pringsari, Pringapus, Semarang, Central Java
           </p>
         </div>
         <Link
