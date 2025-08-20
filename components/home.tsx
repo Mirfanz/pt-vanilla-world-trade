@@ -23,23 +23,17 @@ const Home = (props: Props) => {
         <div className="container relative backdrop-brightness-20 h-dvh">
           <div className="flex items-center w-full h-full">
             <div className="w-full text-white">
-              <h3 className="text-xl font-bold mb-2 text-primary">
-                Exportir Vanilla & Spices
-              </h3>
-              <h1 className="text-5xl font-bold mb-6">
-                Nusantara Commodities International
-              </h1>
+              <h3 className="text-xl font-bold mb-2 text-primary">Exportir Vanilla & Spices</h3>
+              <h1 className="text-5xl font-bold mb-6">Nusantara Commodities International</h1>
               <p className="mb-10">
-                <strong>PT Nusantara Commodities International</strong> is a
-                company engaged in the export of Indonesian agricultural
-                commodities, with a primary focus on vanilla and Nusantara
-                spices.
+                <strong>PT Nusantara Commodities International</strong> is a company engaged in the export of Indonesian
+                agricultural commodities, with a primary focus on vanilla and Nusantara spices.
               </p>
               <div className="flex gap-6">
                 {/* <Button className="text-white" as={Link} href="/product" size="lg" variant="bordered" color="default">
                   Our Product
                 </Button> */}
-                <Button as={Link} color="primary" href="/contact" size="lg">
+                <Button as={Link} color="primary" href="/product" size="lg">
                   OUR PRODUCT
                 </Button>
                 <Button
@@ -101,30 +95,20 @@ const Home = (props: Props) => {
           <div className="">
             <h2 className="text-4xl font-bold mb-8">About Us</h2>
             <p className="mb-4">
-              <strong>PT Nusantara Commodities International</strong> is a
-              company engaged in the export of Indonesian agricultural
-              commodities, with a primary focus on vanilla and Nusantara spices.
-              We are committed to bringing Indonesia’s finest natural products
-              to the international market, delivering premium quality that meets
-              global standards.
+              <strong>PT Nusantara Commodities International</strong> is a company engaged in the export of Indonesian
+              agricultural commodities, with a primary focus on vanilla and Nusantara spices. We are committed to bringing
+              Indonesia’s finest natural products to the international market, delivering premium quality that meets global
+              standards.
             </p>
             <p className="mb-4">
-              <strong>PT Nusantara Commodities International</strong> focused on
-              vanilla export, one of Indonesia’s flagship commodities known for
-              its distinctive aroma and exceptional quality. Our vanilla is
-              sourced directly from local farmers through sustainable
-              partnerships.
+              <strong>PT Nusantara Commodities International</strong> focused on vanilla export, one of Indonesia’s flagship
+              commodities known for its distinctive aroma and exceptional quality. Our vanilla is sourced directly from local
+              farmers through sustainable partnerships.
             </p>
           </div>
           <div className="mx-24">
             <div className="w-80 h-80 relative not-hover:animate-pulse hover:scale-110 duration-300">
-              <Image
-                alt="Foto Vanila"
-                className="object-cover w-full h-full"
-                height={512}
-                src={"/logo.png"}
-                width={512}
-              />
+              <Image alt="Foto Vanila" className="object-cover w-full h-full" height={512} src={"/logo.png"} width={512} />
             </div>
             {/* <div className="w-72 h-72 not-hover:rounded-tl-[50%] not-hover:rounded-br-[50%] hover:rounded-tr-[50%] hover:rounded-bl-[50%] duration-300 overflow-hidden relative">
               <Image
@@ -143,9 +127,8 @@ const Home = (props: Props) => {
         <div className="text-center mb-16">
           <h2 className="font-bold text-4xl mb-4">Our Products</h2>
           <p className="max-w-xl text-center mx-auto">
-            We offer a diverse range of premium vanilla and spices sourced
-            directly from Indonesian farmers, ensuring quality and authenticity
-            in every product.
+            We offer a diverse range of premium vanilla and spices sourced directly from Indonesian farmers, ensuring quality
+            and authenticity in every product.
           </p>
         </div>
         <div className="overflow-x-hidden">
@@ -174,9 +157,8 @@ const Home = (props: Props) => {
         <div className="text-center mb-16">
           <h2 className="font-bold text-4xl mb-4">Why Choose Us?</h2>
           <p className="max-w-xl mx-auto">
-            We prioritize quality, reliability, and sustainable partnerships
-            with local farmers to deliver the finest Indonesian vanilla and
-            spices to the global market.
+            We prioritize quality, reliability, and sustainable partnerships with local farmers to deliver the finest
+            Indonesian vanilla and spices to the global market.
           </p>
         </div>
         <div className="grid grid-cols-4 gap-4">
@@ -229,9 +211,7 @@ const Home = (props: Props) => {
       <section className="container">
         <div className="p-10 rounded-xl bg-secondary text-white">
           <h3 className="text-primary mb-2 text-lg font-bold">ANY QUESTION</h3>
-          <h2 className="text-4xl font-bold mb-6">
-            Need more details about our products and services?
-          </h2>
+          <h2 className="text-4xl font-bold mb-6">Need more details about our products and services?</h2>
           <p className="mb-8">Contact us for a free consultation!</p>
           <Button color="primary" size="lg">
             Contact Us
