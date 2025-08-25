@@ -1,7 +1,11 @@
 "use client";
 
 import React from "react";
-import { Skeleton } from "@heroui/skeleton";
+import Image from "next/image";
+import { Button } from "@heroui/button";
+import Link from "next/link";
+
+import { siteConfig } from "@/config/site";
 
 type Props = {};
 
@@ -12,19 +16,29 @@ const Product = (props: Props) => {
         OUR <span className="text-primary">PRODUCT</span>
       </h2>
       <div className="grid lg:gap-8 gap-12 grid-cols-1 lg:grid-cols-3">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
-          <div key={item} className="flex flex-col">
-            <Skeleton className="h-48 mb-4" />
-            <h3 className="text-xl font-semibold mb-3">Product Name {item}</h3>
+        {siteConfig.products.map((item) => (
+          <div key={item.slug} className="flex flex-col">
+            {/* <Skeleton className="h-48 mb-4" /> */}
+            <Image
+              alt={"Photo " + item.name}
+              className="mb-4"
+              height={500}
+              src={item.image}
+              width={500}
+            />
+            <h3 className="text-xl font-semibold mb-3">{item.name}</h3>
 
-            <p className="line-clamp-4 text-foreground-600 text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              repudiandae odit aliquam sed nulla expedita ducimus dolor optio
-              adipisci hic quibusdam numquam deleniti tempora perferendis, ipsum
-              impedit natus amet, itaque a eveniet. Tempore aliquam et sunt.
-              Distinctio ratione ex maxime tenetur, cumque omnis voluptatem, aut
-              aspernatur necessitatibus excepturi, at qui.
+            <p className="line-clamp-4 text-foreground-600 text-justify mb-4">
+              {item.description}
             </p>
+            <Button
+              as={Link}
+              color="primary"
+              href={`/product/${item.slug}`}
+              variant="ghost"
+            >
+              View Product
+            </Button>
           </div>
         ))}
       </div>

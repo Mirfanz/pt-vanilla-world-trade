@@ -53,24 +53,10 @@ export const siteConfig = {
 
   products: [
     {
+      slug: "vanilla-beans",
       name: "Vanilla Beans",
       description: "Premium quality vanilla beans sourced from the best farms.",
-      image: "/images/bg2.jpg",
-      href: "/product/vanilla-beans",
-    },
-    {
-      name: "Spices",
-      description:
-        "A variety of spices including cinnamon, cloves, and nutmeg.",
-      image: "/images/bg3.jpg",
-      href: "/product/spices",
-    },
-    {
-      name: "Spices",
-      description:
-        "A variety of spices including cinnamon, cloves, and nutmeg.",
-      image: "/images/bg3.jpg",
-      href: "/product/spices",
+      image: "/images/7.png",
     },
   ],
   ourValues: [
@@ -97,6 +83,96 @@ export const siteConfig = {
       description:
         "We offer competitive pricing without compromising on quality, ensuring best value.",
       icon: FaDollarSign,
+    },
+  ],
+  galleries: [
+    {
+      title: "Vanilla Beans",
+      image: "/images/2.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/3.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/4.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/5.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/6.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/7.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/8.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/9.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/10.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/11.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/12.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/13.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/14.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/15.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/16.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/17.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/18.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/19.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/21.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/22.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/23.png",
+    },
+    {
+      title: "Vanilla Beans",
+      image: "/images/24.png",
     },
   ],
 };

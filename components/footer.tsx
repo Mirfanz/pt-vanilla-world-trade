@@ -11,6 +11,8 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
+import { siteConfig } from "@/config/site";
+
 type Props = {};
 
 const Footer = (props: Props) => {
@@ -44,11 +46,16 @@ const Footer = (props: Props) => {
       <div className="px-4 lg:px-0">
         <p className="font-bold mb-1">Main Menu</p>
         <ul className="text-foreground-500 flex flex-col gap-1">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Product</li>
-          <li>Gallery</li>
-          <li>Contact</li>
+          {siteConfig.navItems.map((item, index) => (
+            <li key={index}>
+              <Link
+                className="hover:text-primary duration-150"
+                href={item.href}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="px-4 lg:px-0">

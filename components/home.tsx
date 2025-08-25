@@ -16,7 +16,7 @@ const Home = (props: Props) => {
       <section
         className=""
         style={{
-          backgroundImage: "url(/images/bg2.jpg)",
+          backgroundImage: "url(/images/8.png)",
           backgroundSize: "cover",
         }}
       >
@@ -167,9 +167,9 @@ const Home = (props: Props) => {
           </p>
         </div>
         <div className="overflow-x-hidden">
-          <div className="overflow-x-auto grid grid-cols-1 md:grid-cols-3 justify-center scrollbar-hide gap-20 lg:mx-12">
+          <div className="flex overflow-x-scroll justify-center scrollbar-hide flex-nowrap gap-6 lg:mx-12">
             {siteConfig.products.map((item) => (
-              <div key={item.href} className="">
+              <div key={item.slug} className="flex flex-col w-ull lg:w-72">
                 <Image
                   alt={item.name}
                   className="w-full object-cover !aspect-video rounded-lg mb-4"
@@ -179,7 +179,13 @@ const Home = (props: Props) => {
                 />
                 <h3 className="text-lg font-semibold mb-2">{item.name}</h3>
                 <p className="text-sm text-gray-600 mb-4">{item.description}</p>
-                <Button as={Link} color="primary" href={item.href} size="sm">
+                <Button
+                  as={Link}
+                  color="primary"
+                  href={`/product/${item.slug}`}
+                  size="sm"
+                  variant="ghost"
+                >
                   View Product
                 </Button>
               </div>
