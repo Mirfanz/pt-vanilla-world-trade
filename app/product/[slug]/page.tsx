@@ -13,5 +13,5 @@ export default async function DetailProductPage({
 
   if (!result) notFound();
 
-  return <DetailProduct product={result} />;
+  return <DetailProduct slug={slug} />;
 }

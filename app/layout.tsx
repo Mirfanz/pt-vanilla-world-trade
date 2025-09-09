@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
+import FAB from "@/components/fab";
 
 export const metadata: Metadata = {
   title: {
@@ -44,7 +45,8 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <div>{children}</div>
+            <div className="mb-16">{children}</div>
+            <FAB />
             <Footer />
           </div>
         </Providers>

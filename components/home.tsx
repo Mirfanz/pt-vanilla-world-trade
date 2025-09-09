@@ -96,13 +96,13 @@ const Home = (props: Props) => {
               </div>
             </div>
             <div className="mx-32 text-white lg:flex s justify-center items-center relative">
-              <div className="w-36 h-36 lg:w-52 lg:h-52 rounded-lg absolute bg-white opacity-10" />
-              <div className="w-36 h-36 lg:w-52 lg:h-52 rounded-lg relative hover:scale-105 duration-300 overflow-hidden rotate-45">
+              <div className="w-36 rotate-45 h-36 lg:w-52 lg:h-52 rounded-lg absolute bg-white opacity-10" />
+              <div className="w-36 h-36 lg:w-52 lg:h-52 rounded-lg relative hover:scale-105 duration-300 overflow-hidden">
                 <Image
                   alt="Foto Vanila"
                   className="object-cover w-full h-full"
                   height={500}
-                  src={"/images/bg3.jpg"}
+                  src={"/images/10.png"}
                   width={500}
                 />
               </div>
@@ -167,9 +167,9 @@ const Home = (props: Props) => {
           </p>
         </div>
         <div className="overflow-x-hidden">
-          <div className="flex overflow-x-scroll justify-center scrollbar-hide flex-nowrap gap-6 lg:mx-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-12">
             {siteConfig.products.map((item) => (
-              <div key={item.slug} className="flex flex-col w-ull lg:w-72">
+              <div key={item.slug} className="flex flex-col w-ull ">
                 <Image
                   alt={item.name}
                   className="w-full object-cover !aspect-video rounded-lg mb-4"
@@ -178,7 +178,9 @@ const Home = (props: Props) => {
                   width={256}
                 />
                 <h3 className="text-lg font-semibold mb-2">{item.name}</h3>
-                <p className="text-sm text-gray-600 mb-4">{item.description}</p>
+                <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                  {item.description}
+                </p>
                 <Button
                   as={Link}
                   color="primary"

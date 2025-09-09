@@ -35,7 +35,7 @@ const Contact = (props: Props) => {
           href={siteConfig.links.whatsapp}
           target="_blank"
         >
-          <FaWhatsapp size={20} /> 082383432423
+          <FaWhatsapp size={20} /> 081992812420
         </Link>
         <Link
           className="flex gap-2 items-center hover:text-primary duration-150"

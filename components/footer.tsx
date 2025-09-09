@@ -4,12 +4,7 @@ import { Button } from "@heroui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaWhatsapp,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 import { siteConfig } from "@/config/site";
 
@@ -17,7 +12,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-foreground-100 flex flex-col lg:flex-row gap-8 justify-between container py-8 mt-20">
+    <footer className="bg-foreground-100 flex flex-col lg:flex-row gap-8 justify-between container py-8">
       <div className="px-4 lg:px-0">
         <div className="flex items-center gap-2">
           <Image
@@ -68,17 +63,38 @@ const Footer = (props: Props) => {
       <div className="lg:text-end px-4 lg:px-0">
         <p className="font-bold mb-3">Social Media</p>
         <div className="flex gap-2">
-          <Button isIconOnly color="primary" radius="full" size="sm">
+          <Button
+            isIconOnly
+            as={Link}
+            color="primary"
+            href={siteConfig.links.instagram}
+            radius="full"
+            size="sm"
+            target="_blank"
+          >
             <FaInstagram size={20} />
           </Button>
-          <Button isIconOnly color="primary" radius="full" size="sm">
+          <Button
+            isIconOnly
+            as={Link}
+            color="primary"
+            href={siteConfig.links.linkedin}
+            radius="full"
+            size="sm"
+            target="_blank"
+          >
             <FaLinkedin size={20} />
           </Button>
-          <Button isIconOnly color="primary" radius="full" size="sm">
+          <Button
+            isIconOnly
+            as={Link}
+            color="primary"
+            href={siteConfig.links.whatsapp}
+            radius="full"
+            size="sm"
+            target="_blank"
+          >
             <FaWhatsapp size={20} />
-          </Button>
-          <Button isIconOnly color="primary" radius="full" size="sm">
-            <FaXTwitter size={20} />
           </Button>
         </div>
       </div>
