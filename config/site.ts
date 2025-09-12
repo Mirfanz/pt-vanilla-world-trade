@@ -1,12 +1,17 @@
 import {
   FaBusinessTime,
   FaClock,
+  FaClockRotateLeft,
+  FaCubesStacked,
   FaDollarSign,
-  FaFaceSmileBeam,
   FaHandshake,
   FaLeaf,
+  FaLocationPinLock,
   FaMedal,
+  FaShieldHalved,
+  FaTimeline,
   FaTruck,
+  FaUserCheck,
   FaVirusCovidSlash,
 } from "react-icons/fa6";
 
@@ -119,23 +124,23 @@ export const siteConfig = {
       ],
       values: [
         {
-          icon: FaFaceSmileBeam,
+          icon: FaTimeline,
           title: "Consistent Grading",
           description: "Consistent grading and supply for industrial use.",
         },
         {
-          icon: FaFaceSmileBeam,
+          icon: FaShieldHalved,
           title: "Trusted Partner",
           description:
             "Trusted by global manufacturers for extract production.",
         },
         {
-          icon: FaFaceSmileBeam,
+          icon: FaClockRotateLeft,
           title: "Sustainable Sourcing",
           description: "Sustainable sourcing ensures reliable shipments.",
         },
         {
-          icon: FaFaceSmileBeam,
+          icon: FaUserCheck,
           title: "Expert Support",
           description: "Supported by NCI’s export expertise and customer care.",
         },
@@ -160,22 +165,22 @@ export const siteConfig = {
       ],
       values: [
         {
-          icon: FaFaceSmileBeam,
+          icon: FaTimeline,
           title: "Consistent Quality",
           description: "Standardized quality even in lower grades.",
         },
         {
-          icon: FaFaceSmileBeam,
+          icon: FaCubesStacked,
           title: "Reliable Supply",
           description: "Reliable bulk supply for international industries.",
         },
         {
-          icon: FaFaceSmileBeam,
+          icon: FaDollarSign,
           title: "Competitive Pricing",
           description: "Competitive pricing with guaranteed authenticity.",
         },
         {
-          icon: FaFaceSmileBeam,
+          icon: FaUserCheck,
           title: "Expert Support",
           description: "Commitment to sustainable and ethical sourcing.",
         },
@@ -205,17 +210,17 @@ export const siteConfig = {
           description: "100% pure, no additives or artificial flavoring.",
         },
         {
-          icon: FaLeaf,
-          title: "Sustainability",
+          icon: FaLocationPinLock,
+          title: "Authenticity",
           description: "Sourced from authentic Indonesian vanilla.",
         },
         {
-          icon: FaLeaf,
+          icon: FaCubesStacked,
           title: "Reliability",
           description: "Reliable supply chain tailored for global markets.",
         },
         {
-          icon: FaLeaf,
+          icon: FaUserCheck,
           title: "Expertise",
           description:
             "Backed by NCI’s quality assurance and export standards.",

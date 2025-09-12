@@ -33,7 +33,7 @@ export const Navbar = () => {
       >
         <div className="container">
           <div className="flex items-center py-4 gap-6">
-            <div className="flex items-center gap-2">
+            <Link className="flex items-center gap-2" href={"/"}>
               <Image
                 alt="logo"
                 className="w-10 h-10 rounded"
@@ -42,7 +42,7 @@ export const Navbar = () => {
                 width={512}
               />
               <p className="font-bold text-2xl">NCI</p>
-            </div>
+            </Link>
             <div className="ms-auto">
               <ul className="hidden md:flex gap-6">
                 {siteConfig.navItems.map((item) => (
